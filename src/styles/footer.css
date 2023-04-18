@@ -1,0 +1,32 @@
+.footer{
+    background-color: rgb(43, 42, 42);
+    padding: 5%;
+    color: white;
+    height: 28vh;
+}
+.footer p {
+    color: rgb(167, 163, 163);
+}
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+}
+.footerSocial{
+    width:15%;
+    display: flex;
+    justify-content: space-around;
+}
+.footerSocial img{
+    width: 30px;
+    height: 30px;
+
+}
+.footerStore img{
+    width: 80px;
+    height: 30px; 
+    margin-left: 6px;
+}
+.microsoftImg{
+    padding: 3px 3px 3px 0px;
+    margin-left: 0 !important;
+}
