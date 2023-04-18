@@ -1,36 +1,30 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from "react";
+import { filterProgramType } from "../helper/filtros";
+import { AppContext } from "../context/contextProvider";
+import { SeriesMoviesCard } from "./SeriesMoviesCard";
+
+export const MoviesView = () => {
+  const [state] = useContext(AppContext);
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    if (state.data) {
+     setData(filterProgramType(state.data, "movie"));
+    }
+  }, [state]);
 
 
-export const MoviesView = ({data}) => {
-
-  const filterProgramType = (data, type) => {
-    let filteredData = data.entries.filter(elem => elem.programType === type && elem.releaseYear >= 2010 ).sort((a,b) => {
-      
-        const titleA = a.title.toUpperCase();
-        const titleB = b.title.toUpperCase();
-
-        if( titleA < titleB) {
-          return -1;
-        }
-        if( titleA > titleB) {
-          return 1;
-        }
-      return 0;
-  })
-    return (filteredData);
-
-  }
-
-  const res = filterProgramType(data, "movie");
-  console.log(res);
 
   return (
-    <div className='contPpal'>
-      <h3 className='titles'>Pupular Series</h3>
-      <div className='allCardsSeries'>
-
-        
+    <div className="contPpal">
+      <h3 className="titles">Pupular Movies</h3>
+      <div className="allCardsSeries">
+        {data?.map(elem => {
+          return (
+            <SeriesMoviesCard elem={elem}/>
+          )
+        })}
       </div>
     </div>
-  )
-}
+  );
+};

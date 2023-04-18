@@ -1,0 +1,18 @@
+
+.allCardsSeries{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    margin: 20px 0 20px 80px;
+}
+
+/* movil */
+@media (max-width: 480px){
+    .allCardsSeries{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;  
+    margin-left: 50px;
+    }
+ 
+}

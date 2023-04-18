@@ -2,7 +2,7 @@
     min-height: 65vh;
 }
 .titles{
-    background-color: gray;
+    background-color: RGB(65,65,65);
     color: white;
     padding-left: 5%;
     padding-bottom: 1%;
@@ -14,4 +14,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+/* Móvil */
+@media (max-width: 480px){
+    .titles{
+        padding: 3% 1%;
+    }
+    .allCards{
+        padding-left: 12%;
+    }
 }

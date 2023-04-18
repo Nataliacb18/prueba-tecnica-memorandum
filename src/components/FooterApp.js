@@ -11,7 +11,7 @@ import "../styles/footer.css"
 export const FooterApp = () => {
   return (
     <div className='footer'>
-      <h5>Home | Terms and Conditions | Privacy Policy | Collections Statement | Help | Manage Account</h5>
+      <p>Home | Terms and Conditions | Privacy Policy | Collections Statement | Help | Manage Account</p>
       <p>Copyright @ 2018 DEMO Streaming. All Rights Reserved</p>
       <div className='footerContent'>
         <div className='footerSocial'>

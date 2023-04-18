@@ -1,0 +1,13 @@
+.seriesMoviesCards{
+    display: flex;
+    flex-direction: column;
+   width: 100%;
+}
+.seriesMoviesCards img:hover{
+    opacity: 0.5;
+    border: 2px solid white;
+}
+.seriesMoviesCards img{
+    width: 100px;
+    height: 150px;
+}

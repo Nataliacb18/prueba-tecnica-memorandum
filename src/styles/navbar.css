@@ -1,7 +1,22 @@
 .navPpal{
     height: 7vh;
+    background-color: RGB(0,125,254) !important;
+}
+.navPpal Button{
+    background-color: RGB(65,65,65);
+    border-radius: 0;
 }
 .container{
     margin: 0 !important;
     padding: 5%;
+}
+
+/* Móvil */
+@media (max-width: 480px){
+    .container{
+        padding: 0%;
+    }
+    .navbar-collapse{
+        background-color: white;
+    }
 }

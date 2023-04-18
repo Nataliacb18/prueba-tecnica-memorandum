@@ -2,7 +2,7 @@
     background-color: rgb(43, 42, 42);
     padding: 5%;
     color: white;
-    height: 28vh;
+    height: 30vh;
 }
 .footer p {
     color: rgb(167, 163, 163);
@@ -10,6 +10,7 @@
 .footerContent{
     display: flex;
     justify-content: space-between;
+    margin-top: 60px;
 }
 .footerSocial{
     width:15%;
@@ -29,4 +30,23 @@
 .microsoftImg{
     padding: 3px 3px 3px 0px;
     margin-left: 0 !important;
+}
+
+/* Móvil */
+@media (max-width: 480px){
+    .footerContent{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .footerSocial{
+      margin: auto;
+    }
+    .footerSocial img{
+        margin-right: 20% ;
+    }
+    .footerStore{
+        margin: auto;
+        margin-top: 20px ;
+    }
 }
